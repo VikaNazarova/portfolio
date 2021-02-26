@@ -6,7 +6,7 @@ const ServiceQuestion = () => {
         <div id="serviceQuestion" className="module background">
             <div>
                 <h3>Не нашли услугу которую искали?</h3>
-                <Button text="Спросите меня" component="a" href="#contacts" />
+                <Button text="Спросите меня" component="a" href="#contacts" id="second-cta" />
             </div>
             <div>
                 <FiHelpCircle />

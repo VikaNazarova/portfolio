@@ -28,7 +28,7 @@ const Intro = () => {
                     <FiMapPin /> Нахожусь в <a href="https://goo.gl/maps/D7GGcW64WQQU9BDR8" target="_blank">Тольятти, Россия</a>
                 </p>
                 <br />
-                <Button text="Связатся со мной" component="a" href="#contacts" />
+                <Button text="Связатся со мной" component="a" href="#contacts" id="first-cta" />
             </div>
         </div>
     );

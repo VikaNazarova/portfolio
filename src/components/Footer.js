@@ -6,7 +6,7 @@ const Footer = () => {
         <footer id="footer" className="background">
             <FiGithub />
             <p>Посмотреть код сайта, а так же другие мои проекты: </p>
-            <Button text="GitHub" component="a" href="https://github.com/VikaNazarova" target="_blank" />
+            <Button text="GitHub" component="a" href="https://github.com/VikaNazarova" target="_blank"  id="github-cta" />
         </footer>
     );
   };
