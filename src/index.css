@@ -1,5 +1,5 @@
 :root {
-  --main-color: #02144A;
+  --main-color: #6FA7E1;
 	--secondary-color: #C4C4C4;
 	--dark-text: #000;
 	--light-text: #FFF;
@@ -53,9 +53,10 @@ p {
   background: var(--light-text);
   padding: .5rem 1rem;
   display: inline-block;
+  box-shadow: 7px 7px 0px 0px rgba(50, 50, 50, 0.75);
 }
 .btn:hover {
-  box-shadow: 7px 7px 0px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 0px 0px rgba(50, 50, 50, 0.5);
 }
 .iconBtn {
   font-size: 1.125rem; /* 18px */
@@ -89,7 +90,7 @@ p {
   left: 50%; 
   margin-left: -50vw; 
   width: 100vw; 
-  background: var(--secondary-color);
+  background: var(--main-color);
 }
 
 .accordion {
@@ -132,6 +133,17 @@ p {
   height: 350px;
   object-fit: cover;
 }
+#intro > div:first-child::before { 
+  content: '';
+  /* border: 1px solid #ff0000; */
+  position: absolute;
+  top: 80%;
+  left: -10%;
+  z-index: -1;
+  width: 50%;
+  height: 50%;
+  background: var(--main-color);;
+}
 #intro > div:first-child::after { 
   content: '';
   border: 1px solid var(--dark-text);
@@ -142,6 +154,7 @@ p {
   width: 100%;
   height: 100%;
 }
+
 
 #serviceQuestion {
   display: grid;
@@ -212,6 +225,11 @@ p {
   #intro img {  
     width: 300px;
     height: 300px;
+  }
+  #intro > div:first-child::before { 
+    left: -5%;
+    width: 40%;
+    height: 40%;
   }
   #serviceQuestion {
     grid-template-columns: repeat(1, 1fr);
